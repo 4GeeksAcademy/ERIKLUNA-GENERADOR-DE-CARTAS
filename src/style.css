@@ -1,4 +1,4 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+
 .carta {
     width: 350px;
     height: 450px;
@@ -15,6 +15,7 @@
   #mostrarCarta {
     font-size: 150px;
     font-weight: bold;
+    color: black;
     
   }
 
