@@ -26,7 +26,7 @@ window.onload = function() {
   let mostrarCartaElement = document.getElementById("mostrarCarta");
   let botonCarta = document.getElementById("Boton_Carta");
 
-  botonCarta.addEventListener("click", function() {
+  function cambiarCarta() {
     let randomPintas = pintas[Math.floor(Math.random() * pintas.length)];
     let randomValores = valores[Math.floor(Math.random() * valores.length)];
 
@@ -43,5 +43,15 @@ window.onload = function() {
     }
 
     mostrarCartaElement.innerHTML = cartaHTML;
-  });
+    let ancho = document.getElementById("Ancho").value + "px";
+    let alto = document.getElementById("Alto").value + "px";
+
+    mostrarCartaElement.style.width = ancho;
+    mostrarCartaElement.style.height = alto;
+
+    setInterval(cambiarCarta, 10000);
+  }
+
+  botonCarta.addEventListener("click", cambiarCarta);
+  cambiarCarta();
 };

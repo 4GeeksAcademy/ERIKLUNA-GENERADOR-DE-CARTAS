@@ -1,7 +1,10 @@
 body {
   background-color: green;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 #mostrarCarta {
   width: 350px;
@@ -12,6 +15,9 @@ body {
   padding-right: 15px;
   margin: 10px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   flex-direction: column;
   border: black solid 1px;
   font-size: 100px;
@@ -25,6 +31,20 @@ button {
   color: white;
   width: 350px;
   background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#Ancho,
+#Alto {
+  width: 170px;
+  padding: 5px;
+  background-color: red;
+  color: white;
+  margin: 4px;
+  text-align: center;
 }
 
 .col3.d-flex.justify-content-end {
